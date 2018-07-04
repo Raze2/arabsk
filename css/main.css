@@ -1,0 +1,618 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ================ Start My Frame ================ */
+
+button {
+    outline: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+* {
+    font-family: 'Changa', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.show-more a {
+    color: rgba(61, 66, 72, .8);
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+    text-decoration: none;
+    transition: .5s all ease-out;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+.show-more a:hover {
+    background-color: #0383a1;
+    border: 1px solid transparent;
+    color: #FFF
+}
+
+
+/* ================ End My Frame ================ */
+
+
+/* ================ Start Nav ================ */
+
+nav {
+    transition: .5s all ease-in-out;
+    z-index: 99999;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    background: 0 0!important;
+    border: 0!important
+}
+
+nav.absoulte {
+    position: absolute!important
+}
+
+nav.navbar-inverse .navbar-nav>li>a {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: bold;
+    transition: .3s all ease-in-out
+}
+
+nav.navbar-inverse .navbar-nav>.active>a,
+nav.navbar-inverse .navbar-nav>.active>a:focus,
+nav.navbar-inverse .navbar-nav>.active>a:hover,
+nav.navbar-inverse .navbar-nav>li>a:hover {
+    color: #0383a1;
+    background-color: transparent;
+    border-bottom: 3px solid #0383a1;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222 !important;
+    border-color: #080808 !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+nav.navbar-inverse .navbar-brand {
+    color: #FFF
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #297c90 !important;
+    background-color: #0383a1 !important;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+@media all and (max-width:992px) {
+    nav.navbar-inverse .navbar-nav>li>a {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .navbar.navbar-fixed-top .navbar-collapse {
+        background-color: #222 !important;
+    }
+}
+
+
+/* ================ End Nav ================ */
+
+
+/* ================ Start Header ================ */
+
+header {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+header .carousel-inner,
+header .carousel.slide,
+header .item,
+header .item img {
+    width: 100%!important;
+    height: 100%!important
+}
+
+header .carousel-caption {
+    bottom: 35%
+}
+
+header .carousel-caption span {
+    color: #0383a1;
+    font-weight: 900;
+}
+
+header .glyphicon.glyphicon-menu-down {
+    position: relative;
+    top: -24px;
+    color: #0383a1;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 1s ease-in-out;
+    animation: gotodown 1s ease-in-out infinite alternate
+}
+
+@keyframes gotodown {
+    0% {
+        top: -50px
+    }
+    100% {
+        top: -24px
+    }
+}
+
+
+/* ================ End Header ================ */
+
+
+/* ================ Start ================ */
+
+#courses {
+    padding: 15px 0 40px 0;
+    overflow: hidden
+}
+
+#courses h2 {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 52px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#courses h2 {
+    position: relative;
+    margin-bottom: 0px;
+    font-weight: bold
+}
+
+#courses>div>p {
+    margin-top: 0px;
+    color: #777;
+    font-size: 20px;
+}
+
+#courses .serv,
+.service {
+    margin: 30px 0;
+    transition: .5s all ease-in-out;
+}
+
+#courses .serv a h3,
+#courses .serv a p {
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+#courses .serv a i.hover {
+    color: #689eab;
+    border-color: #cab774;
+    -webkit-transition: all 500ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 500ms ease-in;
+    transform: scale(1.1);
+}
+
+#courses .serv a h3.hover {
+    color: #666;
+}
+
+#courses .serv a p.hover {
+    color: #bababa;
+}
+
+#courses>div>div>div>div>a>i {
+    margin: 10px 0;
+    border: 4px solid #b28b00;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    color: #0383a1;
+    box-shadow: 0px 0px 20px 8px #F1EEEC;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+#courses>div>div>div>div>a>p {
+    color: #777;
+    margin: 0 60px 0px 60px;
+}
+
+#courses i,
+.slide a,
+header a {
+    transition: .5s all ease-in-out;
+}
+
+#courses h3 {
+    color: #000;
+}
+
+#courses .show-more {
+    margin: 15px 0
+}
+
+@media all and (max-width:992px) {
+    #courses {
+        padding: 40px 0;
+        overflow: hidden
+    }
+    #courses>div>div>div>div>p {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+
+/* ================ End ================ */
+
+
+/* ================ Start ================ */
+
+.news {
+    background-color: #222222;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news h2 {
+    position: relative;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+
+.news>div>p {
+    margin-top: 0px;
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.news .post a {
+    color: #000;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+.news .post a:hover {
+    color: #0383a1;
+}
+
+.news-sec {
+    margin: 0 100px 0 100px;
+}
+
+.news .row {
+    margin-bottom: 20px
+}
+
+.news .news-sec .post {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+    margin-bottom: 30px;
+}
+
+.news .news-sec .post .blog-text {
+    margin: 10px;
+    font-weight: bold
+}
+
+.news .show-more {
+    margin: 15px 0;
+}
+
+.news .show-more a {
+    color: #fff
+}
+
+@media all and (max-width:992px) {
+    .news-sec {
+        margin: 0 0px 0 0px;
+    }
+}
+
+
+/* ================ End ================ */
+
+
+/* ================ Start ================ */
+
+#workshops {
+    padding-top: 25px;
+}
+
+#workshops .info p {
+    margin-top: 0px;
+    color: #777;
+    font-size: 20px;
+}
+
+#workshops .info {
+    margin-bottom: 30px;
+}
+
+section#workshops .info h2 span {
+    color: #0383a1
+}
+
+section#workshops .image-holder {
+    padding: 15px 0
+}
+
+#workshops img:hover {
+    -webkit-transition: all 500ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 500ms ease-in;
+    transform: scale(1.1);
+}
+
+section#workshops .show-more {
+    margin: 50px 0
+}
+
+
+/* ================ End ================ */
+
+
+/* ================ Start  ================ */
+
+.contact-us {
+    background-image: url("../img/bg-2.jpg");
+    background-size: cover;
+    padding: 80px 0 80px 0;
+}
+
+.contact-us h2 {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-us .contact-desc {
+    margin-top: 0px;
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.contact-us form input[type=text],
+.contact-us form input[type=email] {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 2px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact-us form textarea {
+    height: 178px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 2px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact-us form input[type=text]::placeholder,
+.contact-us form input[type=email]::placeholder,
+.contact-us form textarea::placeholder {
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1
+}
+
+.contact-us form input[type=text]::-webkit-input-placeholder,
+.contact-us form input[type=email]::-webkit-input-placeholder,
+.contact-us form textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1
+}
+
+.contact-us form input[type=text]::-moz-placeholder,
+.contact-us form input[type=email]::-moz-placeholder,
+.contact-us form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1
+}
+
+.contact-us form input[type=text]:-ms-input-placeholder,
+.contact-us form input[type=email]:-ms-input-placeholder,
+.contact-us form textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1
+}
+
+.contact-us form input[type=text]:-moz-placeholder,
+.contact-us form input[type=email]:-moz-placeholder,
+.contact-us form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1
+}
+
+.contact-us .contact-btn {
+    margin: 30px auto;
+    display: block;
+    padding: 13px 42px;
+    border: 0px solid #FFF;
+    color: #FFF;
+    background-color: #0383a1;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+    border-radius: -1px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-us .contact-btn:hover {
+    background-color: #046379;
+}
+
+.contact-us .getintouch {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.contact-us .contact-content {
+    padding: 35px 10px 0 10px;
+}
+
+.contact-us .getintouch .contact-content p {
+    padding-top: 20px;
+}
+
+.contact-us .getintouch .contact-info i {
+    color: #0383a1;
+    padding: 8px
+}
+
+@media all and (max-width:992px) {
+    .contact-us .contact {
+        margin-top: 40px;
+    }
+}
+
+
+/* ================ End   ================ */
+
+
+/* ================ Start Footer  ================ */
+
+footer .copyright {
+    background-color: #333;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+footer .copyright p {
+    margin: 5px;
+}
+
+footer .copyright i {
+    color: #c1c1c1;
+    margin: 0 10px 0 10px;
+    -webkit-transition: .5s all ease-in-out;
+    -moz-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
+    transition: .5s all ease-in-out;
+}
+
+footer .copyright i:hover {
+    color: #0a95b5;
+}
+
+@media all and (max-width:992px) {
+    footer .footer h3 {
+        text-align: center
+    }
+}
+
+@media all and (max-width:767px) {
+    footer .footer {
+        text-align: center
+    }
+}
+
+
+/* ================ End Footer  ================ */
